@@ -1,0 +1,743 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		506D226D1FB093B00018D177 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 506D226C1FB093B00018D177 /* Assets.xcassets */; };
+		506D22701FB093B00018D177 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506D226E1FB093B00018D177 /* LaunchScreen.storyboard */; };
+		506D227D1FB093B00018D177 /* EasyBlogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 506D227C1FB093B00018D177 /* EasyBlogTests.m */; };
+		506D22881FB093B00018D177 /* EasyBlogUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 506D22871FB093B00018D177 /* EasyBlogUITests.m */; };
+		506D22C81FB096E30018D177 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 506D22C71FB096E30018D177 /* main.m */; };
+		506D22CB1FB096EE0018D177 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 506D22CA1FB096EE0018D177 /* AppDelegate.m */; };
+		506D22E21FB0A4690018D177 /* FXHomeTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 506D22DA1FB0A4690018D177 /* FXHomeTableView.m */; };
+		506D22E31FB0A4690018D177 /* FXHomeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 506D22DB1FB0A4690018D177 /* FXHomeButton.m */; };
+		506D22E41FB0A4690018D177 /* FXHomeCustomHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 506D22DD1FB0A4690018D177 /* FXHomeCustomHeadView.m */; };
+		506D22E51FB0A4690018D177 /* FXHomeBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 506D22DE1FB0A4690018D177 /* FXHomeBackgroundView.m */; };
+		506D22E81FB0A4E90018D177 /* FXHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 506D22E71FB0A4E90018D177 /* FXHomeViewController.m */; };
+		506D22F11FB0ACBA0018D177 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 506D22EF1FB0ACBA0018D177 /* UIView+Extension.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		506D22791FB093B00018D177 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 506D22581FB093B00018D177 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 506D225F1FB093B00018D177;
+			remoteInfo = EasyBlog;
+		};
+		506D22841FB093B00018D177 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 506D22581FB093B00018D177 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 506D225F1FB093B00018D177;
+			remoteInfo = EasyBlog;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		506D22601FB093B00018D177 /* EasyBlog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyBlog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		506D226C1FB093B00018D177 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		506D226F1FB093B00018D177 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		506D22711FB093B00018D177 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		506D22781FB093B00018D177 /* EasyBlogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyBlogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		506D227C1FB093B00018D177 /* EasyBlogTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EasyBlogTests.m; sourceTree = "<group>"; };
+		506D227E1FB093B00018D177 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		506D22831FB093B00018D177 /* EasyBlogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyBlogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		506D22871FB093B00018D177 /* EasyBlogUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EasyBlogUITests.m; sourceTree = "<group>"; };
+		506D22891FB093B00018D177 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		506D22C71FB096E30018D177 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		506D22C91FB096EE0018D177 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		506D22CA1FB096EE0018D177 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		506D22D91FB09D510018D177 /* DimensMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DimensMacros.h; sourceTree = "<group>"; };
+		506D22DA1FB0A4690018D177 /* FXHomeTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXHomeTableView.m; sourceTree = "<group>"; };
+		506D22DB1FB0A4690018D177 /* FXHomeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXHomeButton.m; sourceTree = "<group>"; };
+		506D22DC1FB0A4690018D177 /* FXHomeCustomHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXHomeCustomHeadView.h; sourceTree = "<group>"; };
+		506D22DD1FB0A4690018D177 /* FXHomeCustomHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXHomeCustomHeadView.m; sourceTree = "<group>"; };
+		506D22DE1FB0A4690018D177 /* FXHomeBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXHomeBackgroundView.m; sourceTree = "<group>"; };
+		506D22DF1FB0A4690018D177 /* FXHomeBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXHomeBackgroundView.h; sourceTree = "<group>"; };
+		506D22E01FB0A4690018D177 /* FXHomeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXHomeButton.h; sourceTree = "<group>"; };
+		506D22E11FB0A4690018D177 /* FXHomeTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXHomeTableView.h; sourceTree = "<group>"; };
+		506D22E61FB0A4E90018D177 /* FXHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FXHomeViewController.h; sourceTree = "<group>"; };
+		506D22E71FB0A4E90018D177 /* FXHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FXHomeViewController.m; sourceTree = "<group>"; };
+		506D22EE1FB0ABFA0018D177 /* EasyBlog_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyBlog_Prefix.pch; sourceTree = "<group>"; };
+		506D22EF1FB0ACBA0018D177 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		506D22F01FB0ACBA0018D177 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		506D225D1FB093B00018D177 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		506D22751FB093B00018D177 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		506D22801FB093B00018D177 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		506D22571FB093B00018D177 = {
+			isa = PBXGroup;
+			children = (
+				506D22621FB093B00018D177 /* EasyBlog */,
+				506D227B1FB093B00018D177 /* EasyBlogTests */,
+				506D22861FB093B00018D177 /* EasyBlogUITests */,
+				506D22611FB093B00018D177 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		506D22611FB093B00018D177 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				506D22601FB093B00018D177 /* EasyBlog.app */,
+				506D22781FB093B00018D177 /* EasyBlogTests.xctest */,
+				506D22831FB093B00018D177 /* EasyBlogUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		506D22621FB093B00018D177 /* EasyBlog */ = {
+			isa = PBXGroup;
+			children = (
+				506D22B51FB095570018D177 /* class */,
+				506D226C1FB093B00018D177 /* Assets.xcassets */,
+				506D226E1FB093B00018D177 /* LaunchScreen.storyboard */,
+				506D22711FB093B00018D177 /* Info.plist */,
+				506D22EA1FB0A8810018D177 /* Supporting Files */,
+			);
+			path = EasyBlog;
+			sourceTree = "<group>";
+		};
+		506D227B1FB093B00018D177 /* EasyBlogTests */ = {
+			isa = PBXGroup;
+			children = (
+				506D227C1FB093B00018D177 /* EasyBlogTests.m */,
+				506D227E1FB093B00018D177 /* Info.plist */,
+			);
+			path = EasyBlogTests;
+			sourceTree = "<group>";
+		};
+		506D22861FB093B00018D177 /* EasyBlogUITests */ = {
+			isa = PBXGroup;
+			children = (
+				506D22871FB093B00018D177 /* EasyBlogUITests.m */,
+				506D22891FB093B00018D177 /* Info.plist */,
+			);
+			path = EasyBlogUITests;
+			sourceTree = "<group>";
+		};
+		506D22B51FB095570018D177 /* class */ = {
+			isa = PBXGroup;
+			children = (
+				506D22D81FB09D040018D177 /* other */,
+				506D22B61FB095570018D177 /* home */,
+				506D22BA1FB095570018D177 /* plan */,
+				506D22BE1FB095570018D177 /* write */,
+				506D22C21FB095B10018D177 /* Main */,
+			);
+			path = class;
+			sourceTree = "<group>";
+		};
+		506D22B61FB095570018D177 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				506D22B71FB095570018D177 /* controller */,
+				506D22B81FB095570018D177 /* model */,
+				506D22B91FB095570018D177 /* view */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		506D22B71FB095570018D177 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				506D22E61FB0A4E90018D177 /* FXHomeViewController.h */,
+				506D22E71FB0A4E90018D177 /* FXHomeViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		506D22B81FB095570018D177 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		506D22B91FB095570018D177 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				506D22DF1FB0A4690018D177 /* FXHomeBackgroundView.h */,
+				506D22DE1FB0A4690018D177 /* FXHomeBackgroundView.m */,
+				506D22E01FB0A4690018D177 /* FXHomeButton.h */,
+				506D22DB1FB0A4690018D177 /* FXHomeButton.m */,
+				506D22DC1FB0A4690018D177 /* FXHomeCustomHeadView.h */,
+				506D22DD1FB0A4690018D177 /* FXHomeCustomHeadView.m */,
+				506D22E11FB0A4690018D177 /* FXHomeTableView.h */,
+				506D22DA1FB0A4690018D177 /* FXHomeTableView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		506D22BA1FB095570018D177 /* plan */ = {
+			isa = PBXGroup;
+			children = (
+				506D22BB1FB095570018D177 /* controller */,
+				506D22BC1FB095570018D177 /* model */,
+				506D22BD1FB095570018D177 /* view */,
+			);
+			path = plan;
+			sourceTree = "<group>";
+		};
+		506D22BB1FB095570018D177 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		506D22BC1FB095570018D177 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		506D22BD1FB095570018D177 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		506D22BE1FB095570018D177 /* write */ = {
+			isa = PBXGroup;
+			children = (
+				506D22BF1FB095570018D177 /* controller */,
+				506D22C01FB095570018D177 /* model */,
+				506D22C11FB095570018D177 /* view */,
+			);
+			path = write;
+			sourceTree = "<group>";
+		};
+		506D22BF1FB095570018D177 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		506D22C01FB095570018D177 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		506D22C11FB095570018D177 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		506D22C21FB095B10018D177 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				506D22C71FB096E30018D177 /* main.m */,
+				506D22C31FB095B10018D177 /* categary */,
+				506D22C41FB095B10018D177 /* controller */,
+				506D22C51FB095B10018D177 /* lib */,
+				506D22C61FB095B10018D177 /* tool */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		506D22C31FB095B10018D177 /* categary */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = categary;
+			sourceTree = "<group>";
+		};
+		506D22C41FB095B10018D177 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				506D22C91FB096EE0018D177 /* AppDelegate.h */,
+				506D22CA1FB096EE0018D177 /* AppDelegate.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		506D22C51FB095B10018D177 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		506D22C61FB095B10018D177 /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				506D22F01FB0ACBA0018D177 /* UIView+Extension.h */,
+				506D22EF1FB0ACBA0018D177 /* UIView+Extension.m */,
+			);
+			path = tool;
+			sourceTree = "<group>";
+		};
+		506D22D81FB09D040018D177 /* other */ = {
+			isa = PBXGroup;
+			children = (
+				506D22D91FB09D510018D177 /* DimensMacros.h */,
+			);
+			path = other;
+			sourceTree = "<group>";
+		};
+		506D22EA1FB0A8810018D177 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				506D22EE1FB0ABFA0018D177 /* EasyBlog_Prefix.pch */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		506D225F1FB093B00018D177 /* EasyBlog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 506D228C1FB093B00018D177 /* Build configuration list for PBXNativeTarget "EasyBlog" */;
+			buildPhases = (
+				506D225C1FB093B00018D177 /* Sources */,
+				506D225D1FB093B00018D177 /* Frameworks */,
+				506D225E1FB093B00018D177 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EasyBlog;
+			productName = EasyBlog;
+			productReference = 506D22601FB093B00018D177 /* EasyBlog.app */;
+			productType = "com.apple.product-type.application";
+		};
+		506D22771FB093B00018D177 /* EasyBlogTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 506D228F1FB093B00018D177 /* Build configuration list for PBXNativeTarget "EasyBlogTests" */;
+			buildPhases = (
+				506D22741FB093B00018D177 /* Sources */,
+				506D22751FB093B00018D177 /* Frameworks */,
+				506D22761FB093B00018D177 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				506D227A1FB093B00018D177 /* PBXTargetDependency */,
+			);
+			name = EasyBlogTests;
+			productName = EasyBlogTests;
+			productReference = 506D22781FB093B00018D177 /* EasyBlogTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		506D22821FB093B00018D177 /* EasyBlogUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 506D22921FB093B00018D177 /* Build configuration list for PBXNativeTarget "EasyBlogUITests" */;
+			buildPhases = (
+				506D227F1FB093B00018D177 /* Sources */,
+				506D22801FB093B00018D177 /* Frameworks */,
+				506D22811FB093B00018D177 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				506D22851FB093B00018D177 /* PBXTargetDependency */,
+			);
+			name = EasyBlogUITests;
+			productName = EasyBlogUITests;
+			productReference = 506D22831FB093B00018D177 /* EasyBlogUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		506D22581FB093B00018D177 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = KingGG;
+				TargetAttributes = {
+					506D225F1FB093B00018D177 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					506D22771FB093B00018D177 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 506D225F1FB093B00018D177;
+					};
+					506D22821FB093B00018D177 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 506D225F1FB093B00018D177;
+					};
+				};
+			};
+			buildConfigurationList = 506D225B1FB093B00018D177 /* Build configuration list for PBXProject "EasyBlog" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 506D22571FB093B00018D177;
+			productRefGroup = 506D22611FB093B00018D177 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				506D225F1FB093B00018D177 /* EasyBlog */,
+				506D22771FB093B00018D177 /* EasyBlogTests */,
+				506D22821FB093B00018D177 /* EasyBlogUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		506D225E1FB093B00018D177 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				506D22701FB093B00018D177 /* LaunchScreen.storyboard in Resources */,
+				506D226D1FB093B00018D177 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		506D22761FB093B00018D177 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		506D22811FB093B00018D177 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		506D225C1FB093B00018D177 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				506D22C81FB096E30018D177 /* main.m in Sources */,
+				506D22E31FB0A4690018D177 /* FXHomeButton.m in Sources */,
+				506D22E51FB0A4690018D177 /* FXHomeBackgroundView.m in Sources */,
+				506D22E21FB0A4690018D177 /* FXHomeTableView.m in Sources */,
+				506D22E41FB0A4690018D177 /* FXHomeCustomHeadView.m in Sources */,
+				506D22CB1FB096EE0018D177 /* AppDelegate.m in Sources */,
+				506D22F11FB0ACBA0018D177 /* UIView+Extension.m in Sources */,
+				506D22E81FB0A4E90018D177 /* FXHomeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		506D22741FB093B00018D177 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				506D227D1FB093B00018D177 /* EasyBlogTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		506D227F1FB093B00018D177 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				506D22881FB093B00018D177 /* EasyBlogUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		506D227A1FB093B00018D177 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 506D225F1FB093B00018D177 /* EasyBlog */;
+			targetProxy = 506D22791FB093B00018D177 /* PBXContainerItemProxy */;
+		};
+		506D22851FB093B00018D177 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 506D225F1FB093B00018D177 /* EasyBlog */;
+			targetProxy = 506D22841FB093B00018D177 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		506D226E1FB093B00018D177 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				506D226F1FB093B00018D177 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		506D228A1FB093B00018D177 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EasyBlog/Supporting Files/EasyBlog_Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		506D228B1FB093B00018D177 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EasyBlog/Supporting Files/EasyBlog_Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		506D228D1FB093B00018D177 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q72VKM4XVS;
+				INFOPLIST_FILE = EasyBlog/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FigGG.EasyBlog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		506D228E1FB093B00018D177 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q72VKM4XVS;
+				INFOPLIST_FILE = EasyBlog/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FigGG.EasyBlog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		506D22901FB093B00018D177 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q72VKM4XVS;
+				INFOPLIST_FILE = EasyBlogTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FigGG.EasyBlogTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasyBlog.app/EasyBlog";
+			};
+			name = Debug;
+		};
+		506D22911FB093B00018D177 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q72VKM4XVS;
+				INFOPLIST_FILE = EasyBlogTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FigGG.EasyBlogTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasyBlog.app/EasyBlog";
+			};
+			name = Release;
+		};
+		506D22931FB093B00018D177 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q72VKM4XVS;
+				INFOPLIST_FILE = EasyBlogUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FigGG.EasyBlogUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EasyBlog;
+			};
+			name = Debug;
+		};
+		506D22941FB093B00018D177 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q72VKM4XVS;
+				INFOPLIST_FILE = EasyBlogUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FigGG.EasyBlogUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EasyBlog;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		506D225B1FB093B00018D177 /* Build configuration list for PBXProject "EasyBlog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				506D228A1FB093B00018D177 /* Debug */,
+				506D228B1FB093B00018D177 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		506D228C1FB093B00018D177 /* Build configuration list for PBXNativeTarget "EasyBlog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				506D228D1FB093B00018D177 /* Debug */,
+				506D228E1FB093B00018D177 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		506D228F1FB093B00018D177 /* Build configuration list for PBXNativeTarget "EasyBlogTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				506D22901FB093B00018D177 /* Debug */,
+				506D22911FB093B00018D177 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		506D22921FB093B00018D177 /* Build configuration list for PBXNativeTarget "EasyBlogUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				506D22931FB093B00018D177 /* Debug */,
+				506D22941FB093B00018D177 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 506D22581FB093B00018D177 /* Project object */;
+}
