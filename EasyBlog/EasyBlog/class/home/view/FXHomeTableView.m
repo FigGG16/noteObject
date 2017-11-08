@@ -140,10 +140,16 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
+
     //详情页高度
     CGFloat showMinValueOfStuteBar=CGRectGetMinY(self.headView.containerOfbutton.frame)-kLabelHideTopScreenHeigth;
     //scrollView偏移量
     CGFloat offsetY=scrollView.contentOffset.y;
+    
+    //静止底部的弹簧效果
+    self.bounces= offsetY<=300? NO:YES;
+  
+    
     NSLog(@"TopLabelY==%lf",offsetY);
     //获取主窗口
     UIWindow *window=[[UIApplication sharedApplication] keyWindow];
@@ -158,8 +164,7 @@
         [[window viewWithTag:6666] removeFromSuperview];
     }
     
-    //静止底部的弹簧效果
-    self.bounces= offsetY<=0? NO:YES;
+
     
 }
 

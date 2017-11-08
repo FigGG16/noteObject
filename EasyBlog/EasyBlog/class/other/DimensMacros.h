@@ -24,7 +24,7 @@
 
 #define kSpaceInTheMiddleOfButtom 1     //-> button的间距
 #define KSizeOfButtonTitle 14           //-> button的title文字大小
-#define kContainerOfbuttonHeight 350    //-> button容器大小
+#define kContainerOfbutton 350    //-> button容器大小
 //--------------FXHomeCustomHeadView.h------------>
 
 #define KimageWith 40                   //-> 图宽

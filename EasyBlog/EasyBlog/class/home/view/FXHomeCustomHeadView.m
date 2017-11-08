@@ -33,10 +33,10 @@
     self.backgroundColor = [UIColor clearColor];
     
     //button容器的偏移量
-    CGFloat containerOfbuttonY=self.frame.size.height-kContainerOfbuttonHeight;
+    CGFloat containerOfbuttonY=self.frame.size.height-kContainerOfbutton;
     
     //UIview容器
-    UIView *containerOfbutton=[[UILabel alloc] initWithFrame:CGRectMake(0, containerOfbuttonY, self.frame.size.width,kContainerOfbuttonHeight)];
+    UIView *containerOfbutton=[[UILabel alloc] initWithFrame:CGRectMake(0, containerOfbuttonY, self.frame.size.width,kContainerOfbutton)];
     
     //开启用户交互
     containerOfbutton.userInteractionEnabled=YES;

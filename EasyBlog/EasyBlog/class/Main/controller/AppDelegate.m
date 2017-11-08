@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "FXHomeViewController.h"
+#import "FXNavigationController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,11 +18,24 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    
+    
+    
     //实例化UIwind
     self.window=[[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
+    
+    //实例化
+    FXNavigationController *nav=[[FXNavigationController alloc] initWithRootViewController:[[FXHomeViewController alloc] init]];
+    
+
+
+    
     //指定根控制器
-    self.window.rootViewController=[[FXHomeViewController alloc] init];
+    self.window.rootViewController=nav;
+    
+    
+    
     
     //显示窗口
     [self.window makeKeyAndVisible];

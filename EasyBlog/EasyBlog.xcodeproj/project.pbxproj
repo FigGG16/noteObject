@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		501CA1CB1FB289A4007DFEB3 /* FXHomeTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 501CA1CA1FB289A4007DFEB3 /* FXHomeTextView.m */; };
+		501CA1CE1FB298F4007DFEB3 /* FXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 501CA1CD1FB298F4007DFEB3 /* FXNavigationController.m */; };
+		501CA1D11FB2A7FE007DFEB3 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 501CA1CF1FB2A7FE007DFEB3 /* UIBarButtonItem+Extension.m */; };
+		501CA1D41FB2BE67007DFEB3 /* UINavigationBar+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 501CA1D31FB2BE67007DFEB3 /* UINavigationBar+Extension.m */; };
 		506D226D1FB093B00018D177 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 506D226C1FB093B00018D177 /* Assets.xcassets */; };
 		506D22701FB093B00018D177 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506D226E1FB093B00018D177 /* LaunchScreen.storyboard */; };
 		506D227D1FB093B00018D177 /* EasyBlogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 506D227C1FB093B00018D177 /* EasyBlogTests.m */; };
@@ -39,6 +43,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		501CA1C91FB289A4007DFEB3 /* FXHomeTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FXHomeTextView.h; sourceTree = "<group>"; };
+		501CA1CA1FB289A4007DFEB3 /* FXHomeTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FXHomeTextView.m; sourceTree = "<group>"; };
+		501CA1CC1FB298F4007DFEB3 /* FXNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FXNavigationController.h; sourceTree = "<group>"; };
+		501CA1CD1FB298F4007DFEB3 /* FXNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FXNavigationController.m; sourceTree = "<group>"; };
+		501CA1CF1FB2A7FE007DFEB3 /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		501CA1D01FB2A7FE007DFEB3 /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		501CA1D21FB2BE67007DFEB3 /* UINavigationBar+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Extension.h"; sourceTree = "<group>"; };
+		501CA1D31FB2BE67007DFEB3 /* UINavigationBar+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Extension.m"; sourceTree = "<group>"; };
 		506D22601FB093B00018D177 /* EasyBlog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyBlog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		506D226C1FB093B00018D177 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		506D226F1FB093B00018D177 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -192,6 +204,8 @@
 				506D22DD1FB0A4690018D177 /* FXHomeCustomHeadView.m */,
 				506D22E11FB0A4690018D177 /* FXHomeTableView.h */,
 				506D22DA1FB0A4690018D177 /* FXHomeTableView.m */,
+				501CA1C91FB289A4007DFEB3 /* FXHomeTextView.h */,
+				501CA1CA1FB289A4007DFEB3 /* FXHomeTextView.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -273,6 +287,8 @@
 		506D22C31FB095B10018D177 /* categary */ = {
 			isa = PBXGroup;
 			children = (
+				501CA1D01FB2A7FE007DFEB3 /* UIBarButtonItem+Extension.h */,
+				501CA1CF1FB2A7FE007DFEB3 /* UIBarButtonItem+Extension.m */,
 			);
 			path = categary;
 			sourceTree = "<group>";
@@ -282,6 +298,8 @@
 			children = (
 				506D22C91FB096EE0018D177 /* AppDelegate.h */,
 				506D22CA1FB096EE0018D177 /* AppDelegate.m */,
+				501CA1CC1FB298F4007DFEB3 /* FXNavigationController.h */,
+				501CA1CD1FB298F4007DFEB3 /* FXNavigationController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -298,6 +316,8 @@
 			children = (
 				506D22F01FB0ACBA0018D177 /* UIView+Extension.h */,
 				506D22EF1FB0ACBA0018D177 /* UIView+Extension.m */,
+				501CA1D21FB2BE67007DFEB3 /* UINavigationBar+Extension.h */,
+				501CA1D31FB2BE67007DFEB3 /* UINavigationBar+Extension.m */,
 			);
 			path = tool;
 			sourceTree = "<group>";
@@ -451,11 +471,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				506D22C81FB096E30018D177 /* main.m in Sources */,
+				501CA1CE1FB298F4007DFEB3 /* FXNavigationController.m in Sources */,
+				501CA1CB1FB289A4007DFEB3 /* FXHomeTextView.m in Sources */,
 				506D22E31FB0A4690018D177 /* FXHomeButton.m in Sources */,
 				506D22E51FB0A4690018D177 /* FXHomeBackgroundView.m in Sources */,
 				506D22E21FB0A4690018D177 /* FXHomeTableView.m in Sources */,
+				501CA1D11FB2A7FE007DFEB3 /* UIBarButtonItem+Extension.m in Sources */,
 				506D22E41FB0A4690018D177 /* FXHomeCustomHeadView.m in Sources */,
 				506D22CB1FB096EE0018D177 /* AppDelegate.m in Sources */,
+				501CA1D41FB2BE67007DFEB3 /* UINavigationBar+Extension.m in Sources */,
 				506D22F11FB0ACBA0018D177 /* UIView+Extension.m in Sources */,
 				506D22E81FB0A4E90018D177 /* FXHomeViewController.m in Sources */,
 			);
