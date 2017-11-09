@@ -8,6 +8,8 @@
 
 #import "FXHomeTableView.h"
 #import "FXHomeCustomHeadView.h"
+
+
 @interface FXHomeTableView ()<UITableViewDelegate,UITableViewDataSource>
 
 @end
@@ -112,15 +114,24 @@
         return blackView;
     }
 }
+#pragma mark -点击cell进行页面跳转
 
-#pragma mark -
+//- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    
+//    
+//}
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    if(_labelForHideTopScreen)
+    {
+        _labelForHideTopScreen.hidden=YES;
+    }
     
-    NSLog(@"选择第%ld行",indexPath.row);
+    [self.segueDelegate segueShowDetail];
+//    NSLog(@"选择第%ld行",indexPath.row);
 }
-
 
 #pragma mark - cell
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -196,9 +207,8 @@
         }];
         isTop=NO;
     }
-    
-    
 }
+
 
 /**
  详情页label

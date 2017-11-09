@@ -11,6 +11,9 @@
 		501CA1CE1FB298F4007DFEB3 /* FXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 501CA1CD1FB298F4007DFEB3 /* FXNavigationController.m */; };
 		501CA1D11FB2A7FE007DFEB3 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 501CA1CF1FB2A7FE007DFEB3 /* UIBarButtonItem+Extension.m */; };
 		501CA1D41FB2BE67007DFEB3 /* UINavigationBar+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 501CA1D31FB2BE67007DFEB3 /* UINavigationBar+Extension.m */; };
+		502D97F61FB3D68100AD1415 /* FXNoteDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 502D97F51FB3D68100AD1415 /* FXNoteDetailViewController.m */; };
+		502D97F91FB3DBAF00AD1415 /* FXBriefPersonalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 502D97F81FB3DBAF00AD1415 /* FXBriefPersonalView.m */; };
+		502D98021FB40ED800AD1415 /* FXNoteTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 502D98011FB40ED800AD1415 /* FXNoteTextView.m */; };
 		506D226D1FB093B00018D177 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 506D226C1FB093B00018D177 /* Assets.xcassets */; };
 		506D22701FB093B00018D177 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506D226E1FB093B00018D177 /* LaunchScreen.storyboard */; };
 		506D227D1FB093B00018D177 /* EasyBlogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 506D227C1FB093B00018D177 /* EasyBlogTests.m */; };
@@ -51,6 +54,12 @@
 		501CA1D01FB2A7FE007DFEB3 /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
 		501CA1D21FB2BE67007DFEB3 /* UINavigationBar+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Extension.h"; sourceTree = "<group>"; };
 		501CA1D31FB2BE67007DFEB3 /* UINavigationBar+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Extension.m"; sourceTree = "<group>"; };
+		502D97F41FB3D68100AD1415 /* FXNoteDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FXNoteDetailViewController.h; sourceTree = "<group>"; };
+		502D97F51FB3D68100AD1415 /* FXNoteDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FXNoteDetailViewController.m; sourceTree = "<group>"; };
+		502D97F71FB3DBAF00AD1415 /* FXBriefPersonalView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FXBriefPersonalView.h; sourceTree = "<group>"; };
+		502D97F81FB3DBAF00AD1415 /* FXBriefPersonalView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FXBriefPersonalView.m; sourceTree = "<group>"; };
+		502D98001FB40ED800AD1415 /* FXNoteTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FXNoteTextView.h; sourceTree = "<group>"; };
+		502D98011FB40ED800AD1415 /* FXNoteTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FXNoteTextView.m; sourceTree = "<group>"; };
 		506D22601FB093B00018D177 /* EasyBlog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyBlog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		506D226C1FB093B00018D177 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		506D226F1FB093B00018D177 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -105,6 +114,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		502D97F01FB3D65600AD1415 /* NoteDetail */ = {
+			isa = PBXGroup;
+			children = (
+				502D97F11FB3D65600AD1415 /* controller */,
+				502D97F21FB3D65600AD1415 /* model */,
+				502D97F31FB3D65600AD1415 /* view */,
+			);
+			path = NoteDetail;
+			sourceTree = "<group>";
+		};
+		502D97F11FB3D65600AD1415 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				502D97F41FB3D68100AD1415 /* FXNoteDetailViewController.h */,
+				502D97F51FB3D68100AD1415 /* FXNoteDetailViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		502D97F21FB3D65600AD1415 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		502D97F31FB3D65600AD1415 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				502D97F71FB3DBAF00AD1415 /* FXBriefPersonalView.h */,
+				502D97F81FB3DBAF00AD1415 /* FXBriefPersonalView.m */,
+				502D98001FB40ED800AD1415 /* FXNoteTextView.h */,
+				502D98011FB40ED800AD1415 /* FXNoteTextView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		506D22571FB093B00018D177 = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +204,7 @@
 		506D22B51FB095570018D177 /* class */ = {
 			isa = PBXGroup;
 			children = (
+				502D97F01FB3D65600AD1415 /* NoteDetail */,
 				506D22D81FB09D040018D177 /* other */,
 				506D22B61FB095570018D177 /* home */,
 				506D22BA1FB095570018D177 /* plan */,
@@ -475,8 +522,11 @@
 				501CA1CB1FB289A4007DFEB3 /* FXHomeTextView.m in Sources */,
 				506D22E31FB0A4690018D177 /* FXHomeButton.m in Sources */,
 				506D22E51FB0A4690018D177 /* FXHomeBackgroundView.m in Sources */,
+				502D97F91FB3DBAF00AD1415 /* FXBriefPersonalView.m in Sources */,
 				506D22E21FB0A4690018D177 /* FXHomeTableView.m in Sources */,
+				502D98021FB40ED800AD1415 /* FXNoteTextView.m in Sources */,
 				501CA1D11FB2A7FE007DFEB3 /* UIBarButtonItem+Extension.m in Sources */,
+				502D97F61FB3D68100AD1415 /* FXNoteDetailViewController.m in Sources */,
 				506D22E41FB0A4690018D177 /* FXHomeCustomHeadView.m in Sources */,
 				506D22CB1FB096EE0018D177 /* AppDelegate.m in Sources */,
 				501CA1D41FB2BE67007DFEB3 /* UINavigationBar+Extension.m in Sources */,

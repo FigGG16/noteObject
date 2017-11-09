@@ -33,4 +33,12 @@
 
 
 
+#define kMaxSizeWithEnglishFont 40  //显示英语字体的最大尺寸
+#define kMaxWidthWithEnglishLabel [UIScreen mainScreen].bounds.size.width-20 //设置label居中
+#define kEnglishLabelY 60           //相对父控件的偏移量
+#define kTranslateButtonWith  200   //翻译按钮的宽和高
+#define kTranslateButtonHeight 50
+//--------------FXHomeTextView.h--------------------->
+
+
 

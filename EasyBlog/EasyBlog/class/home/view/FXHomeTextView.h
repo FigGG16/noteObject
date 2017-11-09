@@ -10,4 +10,7 @@
 
 @interface FXHomeTextView : UIView
 
+@property(nonatomic,strong) NSString *showEnglishText;
+@property(nonatomic,strong) UIButton *translateButtom;
+
 @end

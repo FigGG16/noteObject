@@ -19,8 +19,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     
-    
-    
     //实例化UIwind
     self.window=[[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     

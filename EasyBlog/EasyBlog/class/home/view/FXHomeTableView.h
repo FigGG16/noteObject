@@ -7,8 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FXHomeViewController.h"
+
+
+//委托FXHomeViewController进行页面跳转协议
+@protocol FXHomeTableViewDelegate<NSObject>
+-(void)segueShowDetail;
+@end
+
 @class FXHomeCustomHeadView;
+
 @interface FXHomeTableView : UITableView
+
+
+@property (strong,nonatomic)id<FXHomeTableViewDelegate> segueDelegate;
 
 //顶部View
 @property (strong, nonatomic) FXHomeCustomHeadView *headView;
