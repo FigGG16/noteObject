@@ -15,8 +15,9 @@
 
 
 
-#define kHeadView_Height 255+390+250    //-> 顶部的view指定高度
+#define kHeadView_Height 255+390+250 +40  //-> 顶部的view指定高度
 #define kBothSpace 7                    //-> 分隔栏的高度
+#define BACK_TABLEVIEW_NOTIFICATION    @"backTableView"
 //--------------FXHomeViewController.h----------->
 
 #define kLabelHideTopScreenHeigth 60    //-> 详情label的高
@@ -37,7 +38,10 @@
 #define kMaxWidthWithEnglishLabel [UIScreen mainScreen].bounds.size.width-20 //设置label居中
 #define kEnglishLabelY 60           //相对父控件的偏移量
 #define kTranslateButtonWith  200   //翻译按钮的宽和高
-#define kTranslateButtonHeight 50
+#define kTranslateButtonHeight 60
+#define kCornerRadiusOfButton 30
+#define kBackgroundAlphaValueOfTranslateButton 0.3f
+#define kBorderWidthOfTranslateButton 1.0
 //--------------FXHomeTextView.h--------------------->
 
 

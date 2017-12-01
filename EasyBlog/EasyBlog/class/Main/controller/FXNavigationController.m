@@ -27,8 +27,6 @@
 }
 
 
-
-
 /**
  导航Item的抽取
  @param image 图片
